@@ -2,16 +2,16 @@ cd git-practice-03
 git branch branch1
 git checkout -b branch2
 rm dir3/bar
-mv dir3 dir1/
+mv dir3 dir1/dir3
 touch dir1/dir3/newfile2
-git add dir3
+git add dir1/dir3
+git add dir1/dir3/newfile2
 git commit -m"dir3/"
 cd dir1/dir2
 git mv foo foo_modified
 git commit -am"foo_modified"
 cd ..
 cd ..
-git commit -am"newfile2"
 
 git checkout branch1
 touch newfile1
