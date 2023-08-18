@@ -4,6 +4,7 @@ git checkout -b branch2
 rm dir3/bar
 mv dir3 dir1/dir3
 touch dir1/dir3/newfile2
+git -am ."newfile2"
 cd dir1/dir2
 git mv foo foo_modified
 git commit -am"foo_modified"
